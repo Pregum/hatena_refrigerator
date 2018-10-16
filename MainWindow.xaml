@@ -4,9 +4,20 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_FoodManager"
+        xmlns:vm="clr-namespace:Wpf_FoodManager.ViewModel"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Window.DataContext>
+        <vm:FoodViewModel />
+    </Window.DataContext>
+    <Grid Margin="10">
+        <StackPanel>
+            <TextBlock Text="{Binding Id.Value}"/>
+            <TextBlock Text="{Binding Name.Value}"/>
+            <TextBlock Text="{Binding LimitDate.Value}"/>
+            <TextBlock Text="{Binding BoughtDate.Value}"/>
+            <TextBlock Text="{Binding Image.Value}"/>
+        </StackPanel>
         
     </Grid>
 </Window>
