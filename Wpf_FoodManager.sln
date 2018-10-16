@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf_FoodManager", "Wpf_FoodManager.csproj", "{40562A33-33EC-4572-BA64-65B714C2EDCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40562A33-33EC-4572-BA64-65B714C2EDCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40562A33-33EC-4572-BA64-65B714C2EDCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40562A33-33EC-4572-BA64-65B714C2EDCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40562A33-33EC-4572-BA64-65B714C2EDCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83AEE4A2-D0F2-4AD9-B75A-B47F8D80E323}
+	EndGlobalSection
+EndGlobal
