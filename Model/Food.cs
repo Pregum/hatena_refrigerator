@@ -4,16 +4,23 @@ using System.Windows.Media.Imaging;
 
 namespace Wpf_FoodManager.Model
 {
+    /// <summary>
+    /// 食材を表すクラス
+    /// </summary>
     public class Food : BindableBase
     {
         /// <summary>
-        /// Id
+        /// ID
         /// </summary>
-        private uint _id;
-        public uint Id
+        private Guid _id;
+        public Guid ID
         {
             get { return _id; }
             set { this.SetProperty(ref _id, value); }
+            // 上記と同じ記述(INotifyPropertyChanged実装前提)
+            // set {
+            //       this._id = value;
+            //       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(this.Id)));
         }
 
         /// <summary>
@@ -56,15 +63,25 @@ namespace Wpf_FoodManager.Model
             set { this.SetProperty(ref _image, value); }
         }
 
-        private static uint _countId = 1;
 
+        /// <summary>
+        /// デザイナ用コンストラクタ
+        /// </summary>
+        [Obsolete("デザイナ用です。代わりにFood(string, DateTime, DateTime, BitmapImage)を使用してください。")]
         public Food()
         {
         }
 
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
+        /// <param name="name">食材名</param>
+        /// <param name="limitDate">賞味期限</param>
+        /// <param name="boughtDate">購入日</param>
+        /// <param name="image">画像</param>
         public Food(string name, DateTime limitDate, DateTime boughtDate, BitmapImage image)
         {
-            this._id = Food._countId++;
+            this._id = Guid.NewGuid();
             this._name = name;
             this._limitDate = limitDate;
             this._boughtDate = boughtDate;

@@ -2,7 +2,9 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Wpf_FoodManager"
-             StartupUri="MainWindow.xaml">
+             StartupUri="View/VMCollectionTest.xaml">
+             <!--StartupUri="View/ViewModelTest.xaml">-->
+             <!-- 変更前 StartupUri="MainWindow.xaml">-->
     <Application.Resources>
          
     </Application.Resources>

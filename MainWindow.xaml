@@ -18,6 +18,5 @@
             <TextBlock Text="{Binding BoughtDate.Value}"/>
             <TextBlock Text="{Binding Image.Value}"/>
         </StackPanel>
-        
     </Grid>
 </Window>

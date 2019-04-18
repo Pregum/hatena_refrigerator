@@ -118,8 +118,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\FileFoodContainer.cs" />
     <Compile Include="Model\Food.cs" />
+    <Compile Include="Model\FoodCollection.cs" />
+    <Compile Include="Model\IFoodContainer.cs" />
+    <Compile Include="ViewModel\FoodViewModelCollection.cs" />
+    <Compile Include="View\ViewModelTest.xaml.cs">
+      <DependentUpon>ViewModelTest.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\FoodViewModel.cs" />
+    <Compile Include="View\VMCollectionTest.xaml.cs">
+      <DependentUpon>VMCollectionTest.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -132,6 +142,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\ViewModelTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\VMCollectionTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -162,7 +180,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\" />
-    <Folder Include="View\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
